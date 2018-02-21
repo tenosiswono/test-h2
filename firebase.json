@@ -1,0 +1,57 @@
+{
+  "hosting": {
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "headers": [
+      {
+        "source": "/test2.html",
+        "headers": [
+          {
+            "key": "Link",
+            "value": "</1.js>;rel=preload;as=script"
+          }
+        ]
+      },
+      {
+        "source": "/test3.html",
+        "headers": [
+          {
+            "key": "Link",
+            "value": "</3.js>;rel=preload;as=script"
+          }
+        ]
+      },
+      {
+        "source": "/test4.html",
+        "headers": [
+          {
+            "key": "Link",
+            "value": "</1.js>;rel=preload;as=script,</2.js>;rel=preload;as=script"
+          }
+        ]
+      },
+      {
+        "source": "/test5.html",
+        "headers": [
+          {
+            "key": "Link",
+            "value": "</3.js>;rel=preload;as=script,</1.js>;rel=preload;as=script"
+          }
+        ]
+      },
+      {
+        "source": "/test6.html",
+        "headers": [
+          {
+            "key": "Link",
+            "value": "</3.js>;rel=preload;as=script,</4.js>;rel=preload;as=script"
+          }
+        ]
+      }
+    ]
+  }
+}
