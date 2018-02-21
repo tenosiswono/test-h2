@@ -6,9 +6,15 @@
       "**/.*",
       "**/node_modules/**"
     ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ],
     "headers": [
       {
-        "source": "/test2.html",
+        "source": "/2",
         "headers": [
           {
             "key": "Link",
@@ -17,7 +23,7 @@
         ]
       },
       {
-        "source": "/test3.html",
+        "source": "/3",
         "headers": [
           {
             "key": "Link",
@@ -26,7 +32,7 @@
         ]
       },
       {
-        "source": "/test4.html",
+        "source": "/4",
         "headers": [
           {
             "key": "Link",
@@ -35,7 +41,7 @@
         ]
       },
       {
-        "source": "/test5.html",
+        "source": "/5",
         "headers": [
           {
             "key": "Link",
@@ -44,7 +50,7 @@
         ]
       },
       {
-        "source": "/test6.html",
+        "source": "/6",
         "headers": [
           {
             "key": "Link",
